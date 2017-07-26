@@ -16,7 +16,7 @@
 #import "UIView+NIM.h"
 #import "NIMKitUIConfig.h"
 #import "NIMKitDependency.h"
-#import "UIImage+NIM.h"
+#import "UIImage+NIMKit.h"
 #import "NIMSessionUnknowContentView.h"
 #import "NIMKitUIConfig.h"
 #import "NIMKit.h"
