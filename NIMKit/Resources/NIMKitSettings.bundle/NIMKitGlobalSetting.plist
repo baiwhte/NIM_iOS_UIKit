@@ -19,14 +19,14 @@
 			<key>Normal</key>
 			<dict>
 				<key>Name</key>
-				<string>icon_receiver_node_normal.png</string>
+				<string>icon_text_bubble_normal.png</string>
 				<key>Insets</key>
 				<string>{18,25,17,25}</string>
 			</dict>
 			<key>Highlighted</key>
 			<dict>
 				<key>Name</key>
-				<string>icon_receiver_node_pressed.png</string>
+				<string>icon_text_bubble_normal.png</string>
 				<key>Insets</key>
 				<string>{18,25,17,25}</string>
 			</dict>
@@ -36,14 +36,14 @@
 			<key>Normal</key>
 			<dict>
 				<key>Name</key>
-				<string>icon_sender_text_node_normal.png</string>
+				<string>icon_text_bubble_normal.png</string>
 				<key>Insets</key>
 				<string>{18,25,17,25}</string>
 			</dict>
 			<key>Highlighted</key>
 			<dict>
 				<key>Name</key>
-				<string>icon_sender_text_node_pressed.png</string>
+				<string>icon_text_bubble_normal.png</string>
 				<key>Insets</key>
 				<string>{18,25,17,25}</string>
 			</dict>

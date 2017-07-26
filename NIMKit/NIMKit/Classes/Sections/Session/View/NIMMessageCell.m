@@ -16,8 +16,7 @@
 #import "UIView+NIM.h"
 #import "NIMKitUIConfig.h"
 #import "NIMKitDependency.h"
-#import "M80AttributedLabel.h"
-#import "UIImage+NIMKit.h"
+#import "UIImage+NIM.h"
 #import "NIMSessionUnknowContentView.h"
 #import "NIMKitUIConfig.h"
 #import "NIMKit.h"
@@ -72,15 +71,13 @@
     //headerView
     _headImageView = [[NIMAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
     [_headImageView addTarget:self action:@selector(onTapAvatar:) forControlEvents:UIControlEventTouchUpInside];
-    UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(onLongPressAvatar:)];
-    [_headImageView addGestureRecognizer:gesture];
     [self.contentView addSubview:_headImageView];
     
     //nicknamel
     _nameLabel = [[UILabel alloc] init];
     _nameLabel.backgroundColor = [UIColor clearColor];
     _nameLabel.opaque = YES;
-    _nameLabel.font = [UIFont systemFontOfSize:13.0];
+    _nameLabel.font = [UIFont systemFontOfSize:12.0];
     [_nameLabel setTextColor:[UIColor darkGrayColor]];
     [_nameLabel setHidden:YES];
     [self.contentView addSubview:_nameLabel];
@@ -319,7 +316,7 @@
     }
 }
 
-- (void)longGesturePress:(UIGestureRecognizer *)gestureRecognizer
+- (void)longGesturePress:(UIGestureRecognizer*)gestureRecognizer
 {
     if ([gestureRecognizer isKindOfClass:[UILongPressGestureRecognizer class]] &&
         gestureRecognizer.state == UIGestureRecognizerStateBegan) {
@@ -440,40 +437,8 @@
 
 - (void)onTapAvatar:(id)sender{
     if ([self.delegate respondsToSelector:@selector(onTapAvatar:)]) {
-        NSString *source = [self messageSendSource:self.model.message];
-        [self.delegate onTapAvatar:source];
+        [self.delegate onTapAvatar:self.model.message.from];
     }
-}
-
-- (void)onLongPressAvatar:(UIGestureRecognizer *)gestureRecognizer
-{
-    if ([gestureRecognizer isKindOfClass:[UILongPressGestureRecognizer class]] &&
-        gestureRecognizer.state == UIGestureRecognizerStateBegan)
-    {
-        if ([self.delegate respondsToSelector:@selector(onLongPressAvatar:)])
-        {
-            NSString *source = [self messageSendSource:self.model.message];
-            [self.delegate onLongPressAvatar:source];
-        }
-    }
-}
-
-- (NSString *)messageSendSource:(NIMMessage *)message
-{
-    NSString *from = nil;
-    if (self.model.message.messageType == NIMMessageTypeRobot)
-    {
-        NIMRobotObject *object = (NIMRobotObject *)self.model.message.messageObject;
-        if (object.isFromRobot)
-        {
-            from = object.robotId;
-        }
-    }
-    if (!from)
-    {
-        from = self.model.message.from;
-    }
-    return from;
 }
 
 @end

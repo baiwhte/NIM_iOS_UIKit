@@ -9,7 +9,7 @@
 #import "NIMInputToolBar.h"
 #import "NIMGrowingTextView.h"
 #import "UIView+NIM.h"
-#import "UIImage+NIMKit.h"
+#import "UIImage+NIM.h"
 #import "NIMInputBarItemType.h"
 
 @interface NIMInputToolBar()<NIMGrowingTextViewDelegate>
@@ -110,7 +110,7 @@
 {
     CGFloat viewHeight = 0.0f;
     if (self.status == NIMInputStatusAudio) {
-        viewHeight = 54.5;
+        viewHeight = 45.5;
     }else{
         //算出 TextView 的宽度
         [self adjustTextViewWidth:size.width];
@@ -322,7 +322,7 @@
 
 - (CGFloat)textViewPadding
 {
-    return 3.f;
+    return 0.f;
 }
 
 

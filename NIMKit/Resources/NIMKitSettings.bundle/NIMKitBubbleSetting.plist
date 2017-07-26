@@ -7,37 +7,74 @@
 		<key>Content_Insets</key>
 		<dict>
 			<key>Left</key>
-			<string>{11,15,9,9}</string>
+			<string>{4,10,4,8}</string>
 			<key>Right</key>
-			<string>{11,11,9,15}</string>
+			<string>{4,10,4,8}</string>
 		</dict>
 		<key>Content_Color</key>
 		<dict>
 			<key>Left</key>
 			<string>#000000</string>
 			<key>Right</key>
-			<string>#FFFFFF</string>
+			<string>#000000</string>
 		</dict>
 		<key>Content_Font_Size</key>
-		<integer>14</integer>
+		<integer>15</integer>
 		<key>Show_Avatar</key>
 		<true/>
 	</dict>
 	<key>Audio</key>
 	<dict>
+		<key>Bubble</key>
+		<dict>
+			<key>Left</key>
+			<dict>
+				<key>Normal</key>
+				<dict>
+					<key>Name</key>
+					<string>icon_audio_bubble_normal.png</string>
+					<key>Insets</key>
+					<string>{18,25,17,25}</string>
+				</dict>
+				<key>Highlighted</key>
+				<dict>
+					<key>Name</key>
+					<string>icon_audio_bubble_normal.png</string>
+					<key>Insets</key>
+					<string>{18,25,17,25}</string>
+				</dict>
+			</dict>
+			<key>Right</key>
+			<dict>
+				<key>Normal</key>
+				<dict>
+					<key>Name</key>
+					<string>icon_audio_bubble_normal.png</string>
+					<key>Insets</key>
+					<string>{18,25,17,25}</string>
+				</dict>
+				<key>Highlighted</key>
+				<dict>
+					<key>Name</key>
+					<string>icon_audio_bubble_normal.png</string>
+					<key>Insets</key>
+					<string>{18,25,17,25}</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>Content_Insets</key>
 		<dict>
 			<key>Left</key>
-			<string>{8,13,9,12}</string>
+			<string>{4,8,4,8}</string>
 			<key>Right</key>
-			<string>{8,12,9,14}</string>
+			<string>{4,8,4,8}</string>
 		</dict>
 		<key>Content_Color</key>
 		<dict>
 			<key>Left</key>
 			<string>#000000</string>
 			<key>Right</key>
-			<string>#FFFFFF</string>
+			<string>#000000</string>
 		</dict>
 		<key>Content_Font_Size</key>
 		<integer>14</integer>
@@ -75,9 +112,9 @@
 		<key>Content_Insets</key>
 		<dict>
 			<key>Left</key>
-			<string>{3,8,3,3}</string>
+			<string>{8,8,8,8}</string>
 			<key>Right</key>
-			<string>{3,3,3,8}</string>
+			<string>{8,8,8,8}</string>
 		</dict>
 		<key>Show_Avatar</key>
 		<true/>
@@ -160,27 +197,6 @@
 				</dict>
 			</dict>
 		</dict>
-	</dict>
-	<key>Robot</key>
-	<dict>
-		<key>Content_Insets</key>
-		<dict>
-			<key>Left</key>
-			<string>{0,15,0,10}</string>
-			<key>Right</key>
-			<string>{0,11,0,15}</string>
-		</dict>
-		<key>Content_Color</key>
-		<dict>
-			<key>Left</key>
-			<string>#000000</string>
-			<key>Right</key>
-			<string>#FFFFFF</string>
-		</dict>
-		<key>Content_Font_Size</key>
-		<integer>14</integer>
-		<key>Show_Avatar</key>
-		<true/>
 	</dict>
 	<key>Unsupport</key>
 	<dict>
